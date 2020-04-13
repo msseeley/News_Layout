@@ -37,17 +37,36 @@
   #main-footer .footer-container{
     grid-template-columns: 1fr;
   }
+  /* main footer */
+  #main-footer .footer-container{
+    text-align: center;
+  }
 
   /* clearing spans */
   #main-footer .footer-container > *:last-child{
     grid-column: 1;
   }
 
-  /* main foot */
 
   #main-footer .footer-container :first-child,
   #main-footer .footer-containter *:nth-child(2) {
     border-bottom: #444 dotted 1px;
     padding-bottom: 1px;
   }
+
+  /* page content */
+  .page-container{
+    grid-template-columns: 1fr;
+  }
+
+ .l-heading{
+    text-align: center;
+    justify-content: center;
+  }
+
+  /* clear span */
+  .page-container > *:first-child{
+    grid-row: 1;
+  }
+
 }
