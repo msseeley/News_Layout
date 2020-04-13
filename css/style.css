@@ -26,6 +26,10 @@ body{
   background: var(--light-color);
 }
 
+p{
+  margin: .5rem 0;
+}
+
 a{
   color: var(--dark-color);
   text-decoration: none;
@@ -45,6 +49,7 @@ h1, h2, h3, h4, h5, h6{
   margin-bottom: .55rem;
   line-height: 1.3;
 }
+
 
 /* utility */
 
@@ -123,7 +128,16 @@ h1, h2, h3, h4, h5, h6{
   padding: 3rem;
 }
 
+.list li{
+  padding: 0.5rem 0;
+  border-bottom: #555 dotted 1px;
+  width: 90%;
+}
 
+/* override #main-footer a style? */
+.list li a:hover{
+  color: var(--primary-color)!important;
+}
 /* btn dark by default */
 
 .btn-light{ background: var(--light-color)}
@@ -275,3 +289,12 @@ h1, h2, h3, h4, h5, h6{
   font-size: 0.75rem;
 }
 
+#main-footer .footer-container input[type="email"]{
+  width: 90%;
+  padding: 0.5rem;
+  margin-bottom: 0.5rem;
+}
+
+#main-footer .footer-container input[type="submit"]{
+  width: 90%;
+}
